@@ -37,13 +37,13 @@ export function PostLayout(props: PostLayoutProps) {
                 </dd>
               </dl>
             </div>
-            <div className="divide-y divide-gray-200 !border-t-0 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+            {/* <div className="divide-y divide-gray-200 !border-t-0 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose prose-base md:prose-lg max-w-none pb-8 pt-10 dark:prose-dark">
                 {children}
               </div>
               <SocialShareButtons postUrl={postUrl} title={title} fileName={fileName} />
               <Comments frontMatter={frontMatter} config={commentConfig} />
-            </div>
+            </div> */}
             <footer>
               <div className="text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2">
                 <div className="py-4">

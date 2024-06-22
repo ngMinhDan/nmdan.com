@@ -55,9 +55,9 @@
   "month": "month",
   "day": "day",
   "build_with": {
-    "built_with": "Build with",
-    "view_source": "Opensource",
-    "copyright_author": "Leo's"
+    "built_with": "Build from",
+    "view_source": "https://github.com/hta218/leohuynh.dev",
+    "copyright_author": "Minh Dan"
   },
   "projects": {
     "projects_description": "My open-source side projects and stuff that I built with my colleagues at work",
