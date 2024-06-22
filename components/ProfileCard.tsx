@@ -67,14 +67,14 @@ export function ProfileCard() {
           width={550}
           height={350}
           style={{
-            objectPosition: '50% 16%',
+            objectPosition: '60% 50%',
             objectFit: 'cover',
             width: '100%',
             aspectRatio: '17/11',
           }}
           priority
         />
-        <SpotifyNowPlaying />
+        {/* <SpotifyNowPlaying /> */}
         <ProfileCardInfo />
         <span className="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
       </div>

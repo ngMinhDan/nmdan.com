@@ -40,8 +40,8 @@ export let LOCALES = [
   },
   {
     code: 'es',
-    name: 'Español',
-    flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/es.svg',
+    name: 'Vietnamese',
+    flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/vn.svg',
   },
 ]
 
