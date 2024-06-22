@@ -67,7 +67,7 @@ export function ProfileCard() {
           width={550}
           height={350}
           style={{
-            objectPosition: '60% 50%',
+            objectPosition: '60% 55%',
             objectFit: 'cover',
             width: '100%',
             aspectRatio: '17/11',
