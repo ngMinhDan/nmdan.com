@@ -40,7 +40,7 @@
   "back_button": "Back to homepage",
   "blog": {
     "all_posts_title": "All Posts",
-    "intro": "I write mostly about web development, tech related, and sometime about my personal life. Use the search below to filter by title.",
+    "intro": "I write mostly about digital product development, business related, and sometime about my personal life. Use the search below to filter by title.",
     "no_posts": "No posts found.",
     "search_posts": "Search posts",
     "published_on": "Published on",
@@ -56,11 +56,11 @@
   "day": "day",
   "build_with": {
     "built_with": "Build from",
-    "view_source": "https://github.com/hta218/leohuynh.dev",
+    "view_source": "Opensource",
     "copyright_author": "Minh Dan"
   },
   "projects": {
-    "projects_description": "My open-source side projects and stuff that I built with my colleagues at work",
+    "projects_description": "My open-source side projects and the main project that I contribute to with my co-worker",
     "projects_title": "Projects",
     "work_title": "Work",
     "side_title": "Side projects",
