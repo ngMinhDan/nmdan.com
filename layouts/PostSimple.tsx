@@ -1,6 +1,5 @@
 import { BlogMeta } from '~/components/blog/BlogMeta'
 import { BlogTags } from '~/components/blog/BlogTags'
-import { Comments } from '~/components/comments'
 import { PageTitle } from '~/components/PageTitle'
 import { ScrollTopButton } from '~/components/ScrollTopButton'
 import { SectionContainer } from '~/components/SectionContainer'
