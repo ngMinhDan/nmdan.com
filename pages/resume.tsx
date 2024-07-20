@@ -1,24 +1,27 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { MDXLayoutRenderer } from '~/components/MDXComponents'
-import { getFileBySlug } from '~/libs/mdx.server'
-import type { MdxFileData } from '~/types/mdx'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
-export async function getStaticProps({ locale }) {
-  let resumeData = await getFileBySlug(locale, 'authors', 'resume')
-  return {
-    props: { resumeData, ...(await serverSideTranslations(locale, ['common'])) },
-  }
-}
+// eslint-disable-next-line no-undef
+const Resume: React.FC = () => {
+  const router = useRouter()
+  const [loading, setLoading] = useState(true)
 
-export default function About({ resumeData }: { resumeData: MdxFileData }) {
-  let { mdxSource, frontMatter, toc } = resumeData
+  useEffect(() => {
+    // Simulate a loading effect before redirecting
+    const timer = setTimeout(() => {
+      router.push('/media/resume.pdf')
+    }, 1000) // 2-second delay
+
+    return () => clearTimeout(timer) // Cleanup the timer on unmount
+  }, [router])
 
   return (
-    <MDXLayoutRenderer
-      layout={frontMatter.layout}
-      mdxSource={mdxSource}
-      frontMatter={frontMatter}
-      toc={toc}
-    />
+    <div
+      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}
+    >
+      {loading && <p>Loading your resume, please wait...</p>}
+    </div>
   )
 }
+
+export default Resume
