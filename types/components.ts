@@ -1,6 +1,5 @@
 import type { ImageProps as NextImageProps } from 'next/image'
 import type React from 'react'
-import type { projectsData } from '~/data/en/projectsData'
 import type { commentConfig } from '~/data/siteMetadata'
 import type { MdxFrontMatter, ReadingTime } from './mdx'
 
@@ -14,12 +13,6 @@ export interface ImageLightBoxProps extends Pick<NextImageProps, 'src'> {
 
 export interface ImageProps extends NextImageProps {
   shouldOpenLightbox?: boolean
-}
-
-export type ProjectDataType = (typeof projectsData)[0]
-
-export interface ProjectCardProps {
-  project: ProjectDataType
 }
 
 export interface SocialButtonsProps {
